@@ -1,0 +1,838 @@
+
+
+
+
+Natural trumpet - Wikipedia
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Jump to content
+
+
+
+
+
+
+
+Main menu
+
+
+
+
+
+Main menu
+move to sidebar
+hide
+
+
+
+		Navigation
+	
+
+
+Main pageContentsCurrent eventsRandom articleAbout WikipediaContact us
+
+
+
+
+
+		Contribute
+	
+
+
+HelpLearn to editCommunity portalRecent changesUpload fileSpecial pages
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Search
+
+
+
+
+
+
+
+
+
+
+
+Search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Appearance
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Donate
+
+Create account
+
+Log in
+
+
+
+
+
+
+
+
+Personal tools
+
+
+
+
+
+Donate Create account Log in
+
+
+
+
+
+		Pages for logged out editors learn more
+
+
+
+ContributionsTalk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Contents
+move to sidebar
+hide
+
+
+
+
+(Top)
+
+
+
+
+
+1
+History
+
+
+
+
+Toggle History subsection
+
+
+
+
+
+1.1
+Period instruments
+
+
+
+
+
+
+
+
+
+
+2
+Modern replicas
+
+
+
+
+
+
+
+
+3
+Construction
+
+
+
+
+
+
+
+
+4
+Players
+
+
+
+
+
+
+
+
+5
+See also
+
+
+
+
+
+
+
+
+6
+References
+
+
+
+
+
+
+
+
+7
+External links
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Toggle the table of contents
+
+
+
+
+
+
+
+Natural trumpet
+
+
+
+10 languages
+
+
+
+
+AlemannischDeutschEsperantoFrançaisItalianoNederlands日本語Norsk bokmålNorsk nynorskOccitan
+
+Edit links
+
+
+
+
+
+
+
+
+
+
+
+ArticleTalk
+
+
+
+
+
+English
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ReadEditView history
+
+
+
+
+
+
+
+Tools
+
+
+
+
+
+Tools
+move to sidebar
+hide
+
+
+
+		Actions
+	
+
+
+ReadEditView history
+
+
+
+
+
+		General
+	
+
+
+What links hereRelated changesUpload filePermanent linkPage informationCite this pageGet shortened URLDownload QR code
+
+
+
+
+
+		Print/export
+	
+
+
+Download as PDFPrintable version
+
+
+
+
+
+		In other projects
+	
+
+
+Wikimedia CommonsWikidata item
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Appearance
+move to sidebar
+hide
+
+
+
+
+
+
+
+
+
+
+From Wikipedia, the free encyclopedia
+
+
+Early form of trumpet preceding the invention of keys or valves
+Natural trumpetNatural trumpet in D, Germany 1790Classification
+Brass instrumentHornbostel–Sachs classification423.121(Natural trumpets – There are no means of changing the pitch apart from the player's lips; end-blown trumpets – The mouth-hole faces the axis of the trumpet.)Related instruments
+Clarion, Bugle
+A natural trumpet is a valveless brass instrument that is able to play the notes of the harmonic series.
+
+
+History[edit]
+See: Clarion
+The natural trumpet was  used as a military instrument to facilitate communication (e.g. break camp, retreat, etc.).
+Even before the late Baroque period the natural trumpet had been accepted into Western art music. There is evidence, for example, of extensive use of trumpet ensembles in Venetian ceremonial music of the 16th century. Although neither Andrea nor Giovanni Gabrieli wrote music specifically for the trumpet, they would have been very familiar with its technical possibilities.[citation needed]
+Later, talented players such as the early baroque composer Girolamo Fantini demonstrated that by playing in the extreme upper register and "lipping" the notes of the 11th and 13th harmonics (that is, flattening or sharpening those impure harmonics into tune with the embouchure), it was possible to play diatonic major and minor scales (and, hence, actual melodies rather than arpeggios) on a natural trumpet. The most talented players were even able to produce certain chromatic notes outside the harmonic series by this process (such as lipping a natural C down to B), although these notes were mostly used as brief passing tones. (In Germany, this technique was called Heruntertreiben, literally "driving down".) Other "impure" harmonics (such as the 7th and 14th – B♭ on an instrument pitched in C – which are very flat) were avoided by most composers, but were sometimes deliberately used, for example, where their unusual sonic qualities would complement the accompanying text in a sacred work.
+
+The commonly used range (from the 3rd to the 16th harmonic) of the harmonic series for a natural trumpet pitched in C. In practice, lower harmonics were never used, and intervals above the 16th harmonic only occasionally called for. Notes that are filled-in are inherently flat and must be lipped up, with the exception of the 11th harmonic, which is lipped down to produce an F and up to produce an F♯. Chromatic notes not in the natural series are produced by lipping the upper adjacent harmonic down a semitone.
+Baroque composers – such as Antonio Vivaldi, Georg Philipp Telemann, George Frideric Handel and Johann Sebastian Bach – made frequent use of trumpets in sacred, orchestral, and even solo works. Many of these trumpet parts are technically quite difficult to play on a natural instrument, and were often written with a specific virtuoso performer in mind, such as Gottfried Reiche (Bach's chief trumpeter and the subject of a famous painting of the era) or Valentine Snow, for whom Handel composed some of his more noted trumpet parts. Indeed, highly skilled trumpeters were a prized commodity in the era, held in high esteem and avidly sought after by musical patrons.
+The vast majority of baroque trumpet parts were written for a natural instrument pitched in C or D, although there were occasional exceptions. J. S. Bach, for example, calls for a trumpet in B♭ in his Cantatas Nos. 5 and 90, trumpets in E♭ in the first version of his Magnificat and, most famously, the solo trumpet in high F in his Brandenburg Concerto No. 2. In the 18th century various attempts were made to overcome the limitations in the notes available to natural trumpets. As early as the time of Bach, crooks (additional lengths of tubing) were introduced between the mouthpiece and the body which lowered the pitch of the instrument and allowed it to be used in a variety of keys. In the latter part of the 18th century side holes covered with keys and a sliding mechanism were tried. Later Anton Weidinger, court trumpeter in Vienna, invented a 5-key trumpet. These experiments were not completely successful, however, since side holes, which work well on instruments with a conical bore, such as cornets and bugles, cause a muffled sound in those with a cylindrical bore.[1]
+Natural trumpets continued to be used through the Classical era and even into the early Romantic period. But changing musical styles along with a growing lack of sufficiently capable players spelled an end to the high, florid, complicated parts typical of Baroque music. A few transitional composers, such as Michael Haydn, Leopold Mozart and Johann Molter, wrote concerti for natural trumpets in the early Classical era. In fact, it could be argued that the concertos of Haydn and Molter represent the zenith of the natural trumpet in terms of technical demands, containing as they do some of the highest notes ever penned for the trumpet in symphonic works (in the case of Haydn, a G above high C – the 24th harmonic on a natural instrument). However, for many decades following, most orchestral trumpet writing consisted of basic harmonic support (what many trumpeters derisively refer to as "thumps and bumps") and fanfare-like passages, with very little in the way of melody. There were a few notable exceptions, such as Mozart's Symphony No. 39 in E♭ major, where the trumpets intone the main theme of the opening movement; Haydn's Symphony No. 103 in E-flat major ("Drum Roll"), where the trumpets often outline the melody in all four movements; or Beethoven's Symphony No. 9 in which the trumpets double the melody of the famous "Ode to Joy" in the finale of the work.
+After the brief attempt at developing a keyed trumpet, the instrument for which Joseph Haydn and Johann Nepomuk Hummel wrote their famous concerti, the development of the more versatile valve trumpet (c. 1815) spelled the eventual demise of the natural trumpet in Western music, until its resurrection in the 20th century. Throughout the first half of the 19th century, the valveless, natural trumpet and the valved trumpet (also the cornet) vied for position in the orchestra, with the valved trumpet establishing a permanent position only in the second half. Even as late as 1843, for example, Wagner was writing for valveless trumpets in his opera The Flying Dutchman.
+In modern-day performances of Baroque and Classical works by period orchestras, the trumpets used are usually altered copies of natural instruments of the period, with the addition of anachronistic nodal "tone holes" (also called "venting holes") used to more easily and accurately correct the intonation of the instrument and the use of altered copies of mouthpieces or baroque inspired modern ones. (There is a growing consensus to refer to these instruments as "baroque trumpets" to distinguish them from pure "natural trumpets".) The use of finger holes on reconstructions of natural trumpets is traceable to Otto Steinkopf, who early in the 20th century discovered holes on a few museum originals. However, it appears that these holes were usually placed at antinodes, and thus designed to prevent the note from sounding, rather than allowing it to be played in tune.
+While modern reconstructions with nodal finger holes may not be completely authentic in comparison with the originals, they nevertheless allow a close approximation of the sound of the natural trumpet (and its ability to more easily blend with other instruments in an ensemble) without the "quirks" of intonation to which modern ears are unaccustomed. Though such vented instruments have been the norm in period orchestras for decades, in recent years ensembles such as La Petite Bande and soloists such as Jean-François Madeuf have been performing and recording using pure natural trumpets.
+In conventional (non-period) orchestras, the highest baroque trumpet parts are usually played on the modern piccolo trumpet, an instrument that provides firm support of range, attack and intonation, while producing a brighter sound – very different from the natural trumpet the composers had in mind.
+The natural trumpet is differentiated from another valveless brass instrument, the bugle, in that it is nearly twice the length. This places the higher harmonics (from the 8th harmonic up, which are closer together in pitch) in a playable range, enabling the performance of diatonic melodies. The bugle, by contrast, is only useful for performing simple fanfares and military calls (such as "Taps") in a lower range (normally only utilizing the 2nd through 6th harmonics), based on the notes of a major triad (for example, the notes B♭, D, and F on a bugle pitched in B♭).
+
+Period instruments[edit]
+Some of the finest surviving examples of pre-Baroque and Baroque era trumpets date back as far as the 1580s, and were made by Anton Schnitzer of Nuremberg.[2] Other notable trumpet makers include the Hainlein family of Nuremberg, the Haas family of Nuremberg, the Ehe family of Nuremberg, and William Bull of London.[3] All of these instrument makers built what are now called natural trumpets.[when?]  During the period, however, these instruments were simply called trumpets, not "natural trumpets", as a valved instrument had yet to be developed.
+
+Modern replicas[edit]
+In the second half of the 20th century as historically-informed performance came into fashion, modern instrument makers began building instruments based on historical instruments.  Among the pioneers were Meinl & Lauber, Adolf Egger, Robert Barclay, Frank Tomes.  Makers active as of 2021 include Matthew Parker, Graham Nicholson, Markus Raquet, Geert Jan van der Heide, Cristian Bosc, Rainer Egger, Bernhard (Ewald) Meinl, Tony Esparis, Nikolai Mänttäri, Nathaniel Wood, and Gunther Cogen. [citation needed]
+
+Construction[edit]
+The natural trumpet has  a mouthpiece, which is inserted into the receiver. The receiver is attached to the long tubing, called the first yard, with a short connector, called a ferrule. The first yard is connected with a ferrule to the first bow, followed by another ferrule and the second yard. The second yard is attached with a ferrule to the second bow. On the baroque trumpet, the vent holes are located at the top of the second yard, and possibly on the second bow. After the second bow are the bellpipe, the ball, the bell, garland, and bezel. The bellpipe and first yard are separated by a wood block, and over that there is a cord for binding.[2]
+
+Players[edit]
+Notable living players of the natural trumpet include Don Smithers and Jean-François Madeuf. Living players of the Baroque trumpet include Robert Farley, Anna Freeman, Alison Balsom,
+Crispian Steele-Perkins, Friedemann Immer [de], Niklas Eklund, David Blackadder, Will Wroth and John Thiessen.[4]
+
+See also[edit]
+History of primitive, ancient Western and non-Western trumpets
+Birch trumpet
+Natural horn
+References[edit]
+
+
+^ Apel, Willi, ed. (1969). Harvard Dictionary of Music (2nd ed.), p. 874. Cambridge, Massachusetts: The Belknap Press of Harvard University Press. ISBN 0-674-37501-7.
+
+^ a b Barclay, Robert. 1992. The Art of the Trumpet-Maker. Oxford: Oxford University Press.
+
+^ Bate, Philip. 1978. Instruments of the Orchestra: The Trumpet and Trombone. London: Ernest Benn.
+
+^ Wilcox, Beverly (May 20, 2008). Miracle of the Nodal Vent. San Francisco Classical Voice. Retrieved  March 6, 2015.
+
+
+External links[edit]
+Photos, discussion, and sound samples of a natural trumpet from 1760 (from the Edinburgh University Collection of Historic Musical Instruments, search page for "natural trumpet")
+Early Trumpet History and Connection to the Baroque-Era Natural Trumpet
+The origin of triads and heroic fanfares in the diatonic scale
+Jean-Francois Maduef performing the 3rd movement from Brandenburg Concerto No.2 in F on a natural trumpet in a live concert
+vteBrass instrumentsModern
+Trumpet
+Contrabass
+Bass
+Piccolo
+Pocket trumpet
+Fanfare trumpet
+Firebird
+Flumpet
+Cornet
+Soprano cornet
+Horn
+Bugle
+French horn
+German horn
+Vienna horn
+Wagner tuba
+Trombone
+Contrabass
+Bass
+Alto
+Soprano
+Superbone
+Cimbasso
+Saxhorn
+Baritone horn
+Alto/Tenor horn
+Flugelhorn
+Fiscorn
+Kuhlohorn
+Tuba
+Subcontrabass tuba
+Euphonium
+Double bell euphonium
+Antiquated
+Clarion
+Cornett
+Cornettino
+Mute cornett
+Tenor cornett
+Cornu
+Dord
+Natural horn
+Post horn
+Natural trumpet
+Baroque trumpet
+Buccina
+Slide trumpet
+Buccin
+Sackbut
+Helicon
+Soprano helicon
+Ophicleide
+Serpent
+Sudrophone
+Saxtuba
+Saxotromba
+Bazooka
+Jazzophone
+Indigenous
+Alphorn
+Nabal
+Vuvuzela
+Nyele
+Carnyx
+Shofar
+Sringa
+Tibetan horn
+Wazza
+ Marching
+Mellophone
+Marching baritone horn
+Marching euphonium
+Trombonium
+Sousaphone
+Contrabass bugle
+Parts/technique
+Valves
+Piston valve
+Rotary valve
+Mutes
+Hand-stopping
+Embouchure
+Mouthpiece
+Falset
+Pedal tone
+Bore
+Valve oil
+Crook
+Leadpipe
+Water key
+Axial flow valve
+Harmonic series
+Ensembles
+Brass band
+British brass band
+Balkan brass
+Brass quintet
+Drum and bugle corps (classic)
+Drum and bugle corps (modern)
+Players
+(all) Trumpeters
+Jazz trumpeters
+Horn players
+Classical trombonists
+Jazz trombonists
+Euphonium players
+Tubists
+Other
+Pitch of brass instruments
+Brass section
+Horn section
+List of euphonium, baritone horn and tenor horn manufacturers
+vteNatural horns and trumpets
+Alphorn
+Birch trumpet
+Buccina
+Bucium
+Bugle
+Buisine
+Bukkehorn
+Chazozra
+Carnyx
+Clarion
+Conch
+Hakgediya
+Horagai
+Nagak
+Cowhorn
+Swedish
+Didgeridoo
+modern
+Dord
+Embouchure & hand-stopping
+Erke
+Karnal
+Karnay
+Lituus
+Lur
+Brudevælte Lurs
+Midwinter horn
+Nafir
+Nyele
+Olifant
+Post horn
+Ramsinga
+Roman tuba
+Salpinx
+Shofar
+Rosh Hashanah
+Sringa
+Tibetan horn
+Tochacatl
+Trembita
+Tube trumpet
+Vuvuzela
+Waqra phuku
+Wazza
+
+vteTrumpets and cornetsBy rangeContrabass > Bass > Standard > Soprano > PiccoloVariants
+Birch
+Bugle
+Clarion
+Cornet
+Cornett
+Cornettino
+Mute cornett
+Tenor cornett
+Fanfare
+Firebird
+Flugelhorn
+Flumpet
+Lur
+Natural
+Pocket
+Post horn
+Salpinx
+Slide
+Parts and technique
+Action
+Arban method
+Bore
+Clarke Studies
+Crook
+Harmonic series
+Keyed
+Mouthpiece
+Embouchure
+Muted
+Valve
+Piston
+Rotary
+Other
+Guča Trumpet Festival
+History
+Repertoire
+Concertos
+Trumpeters
+Jazz
+
+Authority control databases NationalGermanyOtherMusicBrainz instrument
+
+
+
+
+Retrieved from "https://en.wikipedia.org/w/index.php?title=Natural_trumpet&oldid=1248505181"
+Categories: Natural horns and trumpetsBaroque instrumentsOrchestral instrumentsHidden categories: Articles with short descriptionShort description is different from WikidataAll articles with unsourced statementsArticles with unsourced statements from August 2014All articles with vague or ambiguous timeVague or ambiguous time from November 2022Articles with unsourced statements from March 2015
+
+
+
+
+
+
+ This page was last edited on 29 September 2024, at 21:59 (UTC).
+Text is available under the Creative Commons Attribution-ShareAlike 4.0 License;
+additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+
+
+Privacy policy
+About Wikipedia
+Disclaimers
+Contact Wikipedia
+Code of Conduct
+Developers
+Statistics
+Cookie statement
+Mobile view
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Search
+
+
+
+
+
+
+
+
+
+
+
+
+
+Search
+
+
+
+
+
+
+
+
+
+Toggle the table of contents
+
+
+
+
+
+
+
+Natural trumpet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10 languages
+
+
+Add topic
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
