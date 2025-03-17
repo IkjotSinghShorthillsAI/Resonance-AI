@@ -12,9 +12,9 @@ from vector_embeddings import DocumentProcessor, EmbeddingModel, PineconeIndexMa
 
 class RAGPipeline:
     """Handles the RAG pipeline for retrieval and question answering."""
-    def __init__(self, retriever):
+    def __init__(self, retriever,model="gemini-2.0-flash",max_tokens=256,temperature=0.7):
         self.retriever = retriever
-        self.llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash")
+        self.llm = ChatGoogleGenerativeAI(model=model, max_tokens=max_tokens, temperature=temperature)
         self.system_prompt = (
             "You are an assistant for question-answering tasks. "
             "Use the following pieces of retrieved context to answer "
