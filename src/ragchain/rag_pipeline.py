@@ -1,14 +1,14 @@
 import os
-from configure import ConfigLoader, PineconeClient
+from src.ragchain.configure import ConfigLoader, PineconeClient
 from langchain_pinecone import PineconeVectorStore
-from langchain.document_loaders import PyPDFLoader, DirectoryLoader, TextLoader
+from langchain_community.document_loaders import PyPDFLoader, DirectoryLoader, TextLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
 from pinecone import ServerlessSpec
-from vector_embeddings import DocumentProcessor, EmbeddingModel, PineconeIndexManager
+from src.ragchain.vector_embeddings import DocumentProcessor, EmbeddingModel, PineconeIndexManager
 
 class RAGPipeline:
     """Handles the RAG pipeline for retrieval and question answering."""

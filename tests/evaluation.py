@@ -1,7 +1,6 @@
 from src.ragchain.configure import ConfigLoader, PineconeClient
-from src.ragchain.rag_pipeline import RAGPipeline
 from src.ragchain.vector_embeddings import PineconeIndexManager
-
+from src.ragchain.rag_pipeline import RAGPipeline
 import os
 import json
 import numpy as np
@@ -18,7 +17,6 @@ from nltk.translate.meteor_score import meteor_score
 from sklearn.metrics import precision_score, recall_score, f1_score
 from langchain_pinecone import PineconeVectorStore
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
-from langchain.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
@@ -33,7 +31,7 @@ class PipelineTester:
         self.gem_api_key = os.getenv("GEM_API_KEY")
         self.pinecone_client = Pinecone(api_key=self.api_key)
         self.scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
-        self.sentence_model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
+        self.sentence_model = SentenceTransformer("all-MiniLM-L6-v2")
         self.log_file = log_file
         
         # Setup Pinecone and RAG pipeline
@@ -58,7 +56,10 @@ class PipelineTester:
         return P.mean().item(), R.mean().item(), F1.mean().item()
     
     def meteor_score(self, reference, candidate):
-        return meteor_score([reference], candidate)
+        reference_tokens = reference.split()  # Tokenizing reference
+        candidate_tokens = candidate.split()  # Tokenizing candidate
+        return meteor_score([reference_tokens], candidate_tokens)
+
     
     def semantic_similarity(self, ref, cand):
         ref_embedding = self.sentence_model.encode(ref, convert_to_tensor=True)
@@ -107,5 +108,5 @@ class PipelineTester:
     
 if __name__ == "__main__":
     tester = PipelineTester()
-    json_file = "golden_set.json"  # Replace with actual JSON file path
-    tester.evaluate_from_json(json_file,'test_cases_report.csv')
+    json_file = "/home/shtlp_0096/Desktop/coding/rag_project/tests/golden_set.json"
+    tester.evaluate_from_json(json_file,'test_case_report.csv')
