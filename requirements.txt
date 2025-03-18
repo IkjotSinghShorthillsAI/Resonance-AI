@@ -6,3 +6,4 @@ selenium
 streamlit
 langchain-pinecone
 langchain-google-genai
+nltk

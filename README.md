@@ -34,8 +34,19 @@ The main objectives of Resonance AI are:
 - **LangChain** – For constructing retrieval and generation pipelines.
 - **Whisper AI (Future Integration)** – For voice-based query support.
 
-## 🧪 Test Cases
-Test cases documentation: [Link to test cases]
+
+## 📊 Evaluation Framework
+Resonance AI’s performance is evaluated using multiple NLP metrics to ensure high-quality and contextually relevant responses.
+
+### **Evaluation Methods:**
+- **Exact Match**: Checks if the generated response exactly matches the expected answer.
+- **Semantic Similarity**: Computes the cosine similarity between expected and generated answers using a sentence embedding model.
+- **ROUGE Scores**: Measures textual overlap using ROUGE-1 and ROUGE-L.
+- **BLEU Score**: Evaluates n-gram overlap between expected and generated responses.
+- **METEOR Score**: Considers synonym matching and stemming for enhanced evaluation.
+- **BERTScore**: Uses contextual embeddings to measure token-level similarity.
+- **F1 Score**: Computes precision and recall balance based on common word occurrences.
+- **Retrieval Precision**: Assesses the accuracy of retrieved documents in supporting the final answer.
 
 ## 🔥 Future Enhancements
 - **Slack Integration**: Bringing Resonance AI to Slack for seamless interactions in workspaces.
@@ -43,9 +54,4 @@ Test cases documentation: [Link to test cases]
 - **Voice Query Support**: Using Whisper AI to process voice queries.
 - **Multimodal Capabilities**: Extending Gemini’s capabilities to process images of musical notations or instruments.
 - **Enhanced Data Sources**: Integration with Wikipedia, music databases, and digital archives.
-
-## 📄 Documentation & Resources
-- **Code Repository**: [GitHub Link]
-- **Data Source Overview**: [Link to dataset]
-- **Deployment Guide**: [Link to deployment guide]
 

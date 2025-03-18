@@ -108,4 +108,4 @@ class PipelineTester:
 if __name__ == "__main__":
     tester = PipelineTester()
     json_file = "golden_set.json"  # Replace with actual JSON file path
-    tester.evaluate_from_json(json_file)
+    tester.evaluate_from_json(json_file,'test_cases_report.csv')
