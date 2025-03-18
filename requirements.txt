@@ -1,2 +1,8 @@
 bs4
 requests
+langchain
+langchain-community
+selenium
+streamlit
+langchain-pinecone
+langchain-google-genai

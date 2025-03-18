@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from vector_embeddings import PineconeIndexManager, EmbeddingModel, DocumentProcessor
 from rag_pipeline import RAGPipeline
-from config import ConfigLoader, PineconeClient
+from rag.configure import ConfigLoader, PineconeClient
 
 import streamlit as st
 # Load environment variables

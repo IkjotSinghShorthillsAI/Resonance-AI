@@ -1,5 +1,5 @@
 import os
-from config import ConfigLoader, PineconeClient
+from configure import ConfigLoader, PineconeClient
 from langchain_pinecone import PineconeVectorStore
 from langchain.document_loaders import PyPDFLoader, DirectoryLoader, TextLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -62,22 +62,22 @@ if __name__ == "__main__":
     config = ConfigLoader()
     pinecone_client = PineconeClient(api_key=config.pinecone_api_key)
     
-    folder_paths = [
-        "/home/shtlp_0096/Desktop/coding/rag_project/data/singular_websites",
-        "/home/shtlp_0096/Desktop/coding/rag_project/data/instrument_data",
-        "/home/shtlp_0096/Desktop/coding/rag_project/data/scraped_genres"
-    ]
+#     folder_paths = [
+#         "/home/shtlp_0096/Desktop/coding/rag_project/data/singular_websites",
+#         "/home/shtlp_0096/Desktop/coding/rag_project/data/instrument_data",
+#         "/home/shtlp_0096/Desktop/coding/rag_project/data/scraped_genres"
+#     ]
     
-    all_text_chunks = []
-    for path in folder_paths:
-        processor = DocumentProcessor(path)
-        extracted_data = processor.load_txt_files()
-        text_chunks = processor.split_text(extracted_data)
-        print(len(text_chunks))
-        all_text_chunks.extend(text_chunks)
-    print(len(all_text_chunks))
+#     all_text_chunks = []
+#     for path in folder_paths:
+#         processor = DocumentProcessor(path)
+#         extracted_data = processor.load_txt_files()
+#         text_chunks = processor.split_text(extracted_data)
+#         print(len(text_chunks))
+#         all_text_chunks.extend(text_chunks)
+#     print(len(all_text_chunks))
     
-    pinecone_manager = PineconeIndexManager(pinecone_client=pinecone_client)
-    pinecone_manager.create_index()
-    pinecone_manager.upsert_documents(all_text_chunks)
-    print("All documents upserted to Pinecone index.")
+#     pinecone_manager = PineconeIndexManager(pinecone_client=pinecone_client)
+#     pinecone_manager.create_index()
+#     pinecone_manager.upsert_documents(all_text_chunks)
+#     print("All documents upserted to Pinecone index.")

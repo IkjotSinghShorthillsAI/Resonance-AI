@@ -1,5 +1,5 @@
 import os
-from config import ConfigLoader, PineconeClient
+from configure import ConfigLoader, PineconeClient
 from langchain_pinecone import PineconeVectorStore
 from langchain.document_loaders import PyPDFLoader, DirectoryLoader, TextLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
