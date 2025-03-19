@@ -1,4 +1,4 @@
-from base_scraper import BaseScraper
+from src.scrapers.base_scraper import BaseScraper
 import os
 class MusicScraper(BaseScraper):
     def __init__(self, base_url, content_identifier, output_dir="data/singular_websites", output_file="output.txt", use_selenium=False):

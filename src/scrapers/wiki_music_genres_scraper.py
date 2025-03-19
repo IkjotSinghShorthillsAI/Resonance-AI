@@ -2,7 +2,7 @@ import os
 import json
 import requests
 from bs4 import BeautifulSoup
-from base_scraper import BaseScraper
+from src.scrapers.base_scraper import BaseScraper
 
 class WikipediaMusicScraper(BaseScraper):
     def extract_data(self):

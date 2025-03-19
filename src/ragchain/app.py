@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 from src.ragchain.vector_embeddings import PineconeIndexManager, EmbeddingModel, DocumentProcessor
-from rag_pipeline import RAGPipeline
+from src.ragchain.rag_pipeline import RAGPipeline
 from src.ragchain.configure import ConfigLoader, PineconeClient
 import streamlit as st
 import datetime

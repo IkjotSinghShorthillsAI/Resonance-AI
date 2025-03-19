@@ -5,7 +5,7 @@ import time
 import random
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-from base_scraper import BaseScraper  # Assuming BaseScraper is in base_scraper.py
+from src.scrapers.base_scraper import BaseScraper  # Assuming BaseScraper is in base_scraper.py
 
 class WikipediaScraper(BaseScraper):
     def __init__(self, base_url, output_dir="data/instrument_data"):
