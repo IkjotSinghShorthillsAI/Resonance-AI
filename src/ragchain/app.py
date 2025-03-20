@@ -1,3 +1,6 @@
+import sys, os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+
 import os
 from dotenv import load_dotenv
 from src.ragchain.vector_embeddings import PineconeIndexManager, EmbeddingModel, DocumentProcessor
@@ -5,7 +8,6 @@ from src.ragchain.rag_pipeline import RAGPipeline
 from src.ragchain.configure import ConfigLoader, PineconeClient
 import streamlit as st
 import datetime
-
 # Load environment variables
 load_dotenv()
 
