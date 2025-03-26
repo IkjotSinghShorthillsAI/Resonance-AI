@@ -37,3 +37,9 @@
 [2025-03-20 15:31:42] User: yo
 [2025-03-20 15:31:42] Bot: Yo! How can I help you today?
 
+[2025-03-24 17:03:10] User: hello
+[2025-03-24 17:03:10] Bot: Hello! How can I help you today?
+
+[2025-03-24 17:31:21] User: top 3 music genres ?
+[2025-03-24 17:31:21] Bot: The top 3 music genres are hip-hop/rap, pop, and rock. Hip-hop has taken the lead as the dominant genre worldwide. Pop music remains a staple due to its mass appeal.
+

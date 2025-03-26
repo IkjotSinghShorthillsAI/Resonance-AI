@@ -1,55 +1,64 @@
 import unittest
 from unittest.mock import patch, MagicMock, mock_open
+from bs4 import BeautifulSoup
 import os
 from src.scrapers.music_related_webpages_scraper import MusicScraper
 
 class TestMusicScraper(unittest.TestCase):
     
-    @patch('requests.get')
-    def test_extract_data(self, mock_get):
-        mock_response = MagicMock()
-        mock_response.status_code = 200
-        mock_response.text = """
-        <html>
-            <body>
-                <div id='page-content'>
-                    <p>Music history spans centuries.</p>
-                    <p>Genres evolve over time.</p>
-                </div>
-            </body>
-        </html>
-        """
-        mock_get.return_value = mock_response
-
-        scraper = MusicScraper("http://example.com", {"id": "page-content"}, output_file="test_output.txt")
-        with patch('builtins.open', mock_open()) as mock_file:
-            scraper.extract_data()
-        
-        mock_file.assert_called_once_with("data/singular_websites/test_output.txt", 'w', encoding='utf-8')
-        mock_file().write.assert_called_once_with("Music history spans centuries.\nGenres evolve over time.")
+    @patch("os.makedirs")
+    def test_initialization(self, mock_makedirs):
+        scraper = MusicScraper("http://example.com", {"id": "test-id"}, output_file="test.txt")
+        self.assertEqual(scraper.base_url, "http://example.com")
+        self.assertEqual(scraper.content_identifier, {"id": "test-id"})
+        self.assertTrue(scraper.output_file.endswith("test.txt"))
+        mock_makedirs.assert_called_once_with(scraper.output_dir, exist_ok=True)
     
-    @patch('requests.get')
-    def test_extract_data_no_content(self, mock_get):
+    @patch("requests.get")
+    @patch("builtins.open", new_callable=mock_open)
+    def test_extract_data_success(self, mock_file, mock_requests):
+        # Mock the response from requests.get
         mock_response = MagicMock()
-        mock_response.status_code = 200
-        mock_response.text = "<html><body><div></div></body></html>"
-        mock_get.return_value = mock_response
-        
-        scraper = MusicScraper("http://example.com", {"id": "nonexistent"}, output_file="test_output.txt")
+        mock_response.status_code = 200  # Set a valid status code
+        mock_response.text = "<div id='test-id'>Sample Text</div>"
+        mock_requests.return_value = mock_response
+
+        # Initialize the scraper and call extract_data
+        scraper = MusicScraper("http://example.com", {"id": "test-id"})
+        scraper.soup = BeautifulSoup(mock_response.text, 'html.parser')
+        scraper.extract_data()
+
+        # Assert that the correct data was written to the file
+        mock_file().write.assert_called_once_with("Sample Text")
+
+    @patch("requests.get")
+    def test_extract_data_no_content(self, mock_requests):
+        # Mock the response from requests.get
+        mock_response = MagicMock()
+        mock_response.status_code = 200  # Set a valid status code
+        mock_response.text = "<div>No relevant content</div>"
+        mock_requests.return_value = mock_response
+
+        # Initialize the scraper and call extract_data
+        scraper = MusicScraper("http://example.com", {"id": "non-existent"})
+        scraper.soup = BeautifulSoup(mock_response.text, 'html.parser')
+
+        # Assert that an exception is raised when no content is found
         with self.assertRaises(Exception) as context:
             scraper.extract_data()
-        
-        self.assertIn("No content found in the specified div.", str(context.exception))
-    
-    @patch('os.makedirs', side_effect=os.makedirs)
-    def test_directory_creation(self, mock_makedirs):
-        scraper = MusicScraper("http://example.com", {"id": "dummy"}, output_dir="custom_data", output_file="output.txt")
-        # Ensure we have some dummy soup to bypass content extraction errors.
-        scraper.soup = type("DummySoup", (), {"find": lambda self, tag, **kwargs: type("Dummy", (), {"get_text": lambda s, separator, strip: "Dummy Content"})()})()
-        scraper.extract_data()
-        
-        mock_makedirs.assert_called_once_with("custom_data", exist_ok=True)
-        # Optionally add assertions to check the file was created or written using additional patching.
 
-if __name__ == '__main__':
+        self.assertEqual(str(context.exception), "No content found in the specified div.")
+
+    @patch("selenium.webdriver.Chrome")
+    def test_selenium_initialization(self, mock_chrome):
+        mock_driver = MagicMock()
+        mock_driver.page_source = "<div id='test-id'>Sample Text</div>"
+        mock_chrome.return_value = mock_driver
+        
+        scraper = MusicScraper("http://example.com", {"id": "test-id"}, use_selenium=True)
+        self.assertIsNotNone(scraper.soup)
+        mock_driver.get.assert_called_once_with("http://example.com")
+        mock_driver.quit.assert_called_once()
+
+if __name__ == "__main__":
     unittest.main()

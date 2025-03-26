@@ -15,6 +15,8 @@ class ConfigLoader:
         self.google_api_key = os.getenv("GOOGLE_API_KEY")
         self.pinecone_api_key = os.getenv("PINECONE_API_KEY")
         genai.configure(api_key=self.google_api_key)
+        if not self.google_api_key or not self.pinecone_api_key:
+            raise TypeError("Missing required environment variables: GOOGLE_API_KEY or PINECONE_API_KEY")
 
 class PineconeClient:
     """Handles Pinecone connection and serverless configuration."""
