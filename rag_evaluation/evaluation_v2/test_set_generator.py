@@ -6,14 +6,14 @@ import logging
 from typing import List
 from dotenv import load_dotenv
 from pydantic import BaseModel
-from google import generativeai as genai
+from google import genai
 
 # Load environment variables
 load_dotenv()
 
 def setup_logging():
     logging.basicConfig(
-        filename="processing.log",
+        filename="logs/processing.log",
         level=logging.INFO,
         format="%(asctime)s - %(levelname)s - %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S"
@@ -54,7 +54,7 @@ class QAProcessor:
             return []
 
 class FileProcessor:
-    def __init__(self, qa_processor: QAProcessor, progress_file: str = "progress.json"):
+    def __init__(self, qa_processor: QAProcessor, progress_file: str = "logs/progress.json"):
         self.qa_processor = qa_processor
         self.progress_file = progress_file
         self.processed_files = self.load_progress()
@@ -129,8 +129,8 @@ if __name__ == "__main__":
     qa_processor = QAProcessor(api_key=api_key)
     file_processor = FileProcessor(qa_processor)
     
-    folder_paths = ["path/to/folder1", "path/to/folder2"]  # Replace with actual paths
-    output_json = "output.json"
-    output_csv = "output.csv"
+    folder_paths = ["data/singular_websites"] 
+    output_json = "rag_evaluation/evaluation_v2/test_set_gemini.json"
+    output_csv = "rag_evaluation/evaluation_v2/test_set_gemini.csv"
     
     file_processor.process_folders(folder_paths, output_json, output_csv)

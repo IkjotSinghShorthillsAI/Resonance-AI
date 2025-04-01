@@ -3,6 +3,7 @@ import json
 import csv
 import logging
 import numpy as np
+import pandas as pd
 from dotenv import load_dotenv
 from src.ragchain.configure import ConfigLoader, PineconeClient
 from src.ragchain.vector_embeddings import EmbeddingModel, PineconeIndexManager
@@ -17,6 +18,32 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 
 # Load environment variables
 load_dotenv()
+
+logging.basicConfig(
+    filename="logs/rag_evaluation.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+class CSVProcessor:
+    @staticmethod
+    def traverse_csv(file_path):
+        ui_list, ref_list = [], []
+        if not os.path.exists(file_path):
+            logging.error(f"File not found: {file_path}")
+            return [], []
+        try:
+            df = pd.read_csv(file_path)
+            if "Question" not in df.columns or "Answer" not in df.columns:
+                logging.error("CSV file must contain 'user_input' and 'reference' columns.")
+                return [], []
+            ui_list = df["Question"].fillna("N/A").tolist()
+            ref_list = df["Answer"].fillna("N/A").tolist()
+            logging.info(f"Processed {len(ui_list)} entries from CSV.")
+        except Exception as e:
+            logging.error(f"Error processing {file_path}: {str(e)}")
+        return ui_list, ref_list
+
 
 class JSONLProcessor:
     @staticmethod
@@ -110,6 +137,32 @@ class RAGASEvaluator:
                     item["evaluation_result"] = {k: ResultHandler.replace_nan(v) for k, v in score.items()}
                     ResultHandler.save_result(output_csv, output_json, item)
                 logging.info(f"Evaluation completed for: {file_path}")
+    
+    def process_csv(self, file_path, output_csv="rag_evaluation/evaluation_v2/ragas/evaluation_results_gemini_dataset.csv", output_json="rag_evaluation/evaluation_v2/ragas/evaluation_results_gemini_dataset.json"):
+        if not os.path.exists(output_csv):
+            with open(output_csv, mode="w", newline="", encoding="utf-8") as file:
+                writer = csv.writer(file)
+                writer.writerow([
+                    "User Input", "Retrieved Contexts", "Response", "Reference",
+                    "Context Recall", "Faithfulness", "Semantic Similarity", "Answer Correctness"
+                ])
+        
+        sample_queries, expected_responses = CSVProcessor.traverse_csv(file_path)
+        dataset = []
+        for query, reference in zip(sample_queries, expected_responses):
+            relevant_docs = self.pipeline.retriever.invoke(query)
+            response = self.pipeline.rag_chain.invoke({"input": query})
+            dataset.append({
+                "user_input": query, "retrieved_contexts": [doc.page_content for doc in relevant_docs],
+                "response": response["answer"], "reference": reference
+            })
+        
+        eval_scores = self.evaluator.evaluate_responses(dataset).scores
+        for item, score in zip(dataset, eval_scores):
+            item["evaluation_result"] = {k: ResultHandler.replace_nan(v) for k, v in score.items()}
+            ResultHandler.save_result(output_csv, output_json, item)
+        logging.info(f"Evaluation completed for CSV: {file_path}")
+
 
 # Execution
 config = ConfigLoader()
@@ -123,4 +176,5 @@ pipeline = RAGPipeline(retriever=retriever,model="gemini-1.5-flash")
 
 evaluator = Evaluator()
 ragas_evaluator = RAGASEvaluator(pipeline, evaluator)
-ragas_evaluator.process_folder("/home/shtlp_0096/Desktop/coding/rag_project/rag_evaluation/evaluation_v2/ragas/generated_testsets")
+# ragas_evaluator.process_folder("rag_evaluation/evaluation_v2/ragas/generated_testsets")
+ragas_evaluator.process_csv("rag_evaluation/evaluation_v2/test_set_gemini.csv")

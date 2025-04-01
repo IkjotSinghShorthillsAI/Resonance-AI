@@ -1,0 +1,20 @@
+2025-03-28 00:45:04 - INFO - Starting processing for folders: data/singular_websites
+2025-03-28 00:45:04 - INFO - Processing file: decades.txt from data/singular_websites
+2025-03-28 00:45:04 - INFO - AFC is enabled with max remote calls: 10.
+2025-03-28 00:45:07 - INFO - AFC remote call 1 is done.
+2025-03-28 00:45:07 - INFO - Generated 5 Q&A pairs for decades.txt
+2025-03-28 00:45:07 - INFO - Processing file: famous_musicians_all_over_india.txt from data/singular_websites
+2025-03-28 00:45:07 - INFO - AFC is enabled with max remote calls: 10.
+2025-03-28 00:45:11 - INFO - AFC remote call 1 is done.
+2025-03-28 00:45:11 - INFO - Generated 5 Q&A pairs for famous_musicians_all_over_india.txt
+2025-03-28 00:45:11 - INFO - Processing file: unchainedmusic_top_music_genres.txt from data/singular_websites
+2025-03-28 00:45:11 - INFO - AFC is enabled with max remote calls: 10.
+2025-03-28 00:45:15 - INFO - AFC remote call 1 is done.
+2025-03-28 00:45:15 - INFO - Generated 5 Q&A pairs for unchainedmusic_top_music_genres.txt
+2025-03-28 00:45:15 - INFO - Processing file: music_instruments.txt from data/singular_websites
+2025-03-28 00:45:15 - INFO - AFC is enabled with max remote calls: 10.
+2025-03-28 00:45:25 - INFO - AFC remote call 1 is done.
+2025-03-28 00:45:25 - INFO - Generated 5 Q&A pairs for music_instruments.txt
+2025-03-28 00:45:25 - INFO - Q&A data saved: 20 pairs generated.
+2025-03-28 00:45:25 - INFO - Progress saved: 4 files processed.
+2025-03-28 00:45:25 - INFO - Final save complete. Processed 4 new files.
